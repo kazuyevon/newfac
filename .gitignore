@@ -1,0 +1,6 @@
+.metadata/*
+.buildpath
+vendor/*
+composer.phar
+*.bat
+

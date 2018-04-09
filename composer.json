@@ -1,0 +1,26 @@
+{
+
+	"name": "kazuyevon/newfac",
+	"minimum-stability": "dev",
+	"authors": [
+        {
+            "name": "THIEBAUT Fabrice",
+            "email": "kazuyevon@gmail.com"
+        }
+    ],
+	"require": {
+		"php": ">=5.3.3",
+		"twitter/bootstrap": "~4.0",
+		"components/jquery": "~3.3",
+		"nnnick/chartjs": "~2.7",
+		"bassjobsen/bootstrap-3-typeahead" : "master"
+	},
+	 "autoload": {
+        "psr-4": {
+			"newfac\\inc\\": "src/inc/",
+			"newfac\\classes\\": "src/classes/",
+			"newfac\\managers\\": "src/managers/"
+		},
+		"files": ["src/func/functions.php"]
+    }
+}
