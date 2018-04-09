@@ -39,7 +39,7 @@ namespace newfac\view;
 			</div>
 			<div class="col-md-6">
 				<div class="alert alert-info" role="alert" id="alertbox">
-					<h3>Jour <?php echo $dateCouranteFr ?></h3>
+					<h3>Aujourd'hui <?php echo $dateCouranteFr ?></h3>
 					<ul class="list-group">
 						<li class="list-group-item"><h6>Nombre Clients ayant acheté<span class="badge badge-info float-right"><?php echo $nbClientsJour ?></span></h6></li>
 						<li class="list-group-item"><h6>Nouvelles Factures<span class="badge badge-info float-right"><?php echo $totaFacturesJour ?></span></h6></li>
@@ -69,7 +69,7 @@ $(document).ready(function() {
 		switch(value){
 			case 'Ce jour':
 				$('div[id=alertbox]').replaceWith('<div class="alert alert-info" role="alert" id="alertbox">'+
-					'<h3>Jour <?php echo $dateCouranteFr ?></h3>'+
+					'<h3>Aujourd\'hui <?php echo $dateCouranteFr ?></h3>'+
 					'<ul class="list-group">'+
 						'<li class="list-group-item"><h6>Nombre Clients ayant acheté<span class="badge badge-info float-right"><?php echo $nbClientsJour ?></span></h6></li>'+
 						'<li class="list-group-item"><h6>Nouvelles Factures<span class="badge badge-info float-right"><?php echo $totaFacturesJour ?></span></h6></li>'+
@@ -97,7 +97,7 @@ $(document).ready(function() {
 				// break;
 			case 'Ce mois':
 				$('div[id=alertbox]').replaceWith('<div class="alert alert-info" role="alert" id="alertbox">'+
-					'<h3>Mois <?php echo $moisCourantFr ?> de <?php echo $anneeCourante ?></h3>'+
+					'<h3><?php echo $moisCourantFr ?> <?php echo $anneeCourante ?></h3>'+
 					'<ul class="list-group">'+
 						'<li class="list-group-item"><h6>Nombre Clients ayant acheté<span class="badge badge-info float-right"><?php echo $nbClientsMois ?></span></h6></li>'+
 						'<li class="list-group-item"><h6>Nouvelles Factures<span class="badge badge-info float-right"><?php echo $totaFacturesMois ?></span></h6></li>'+
